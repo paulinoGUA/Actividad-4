@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juegos Kichwa</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <div id="pantalla-inicial">
+    <img src="images/portada.jpg" alt="Portada Andina" class="portada" />
+    <button onclick="iniciar()">¡Empezar!</button>
+  </div>
+
+  <div id="menu-juegos" style="display:none;">
+    <h1>Explora la Cultura Kichwa</h1>
+    <button onclick="mostrarJuego('juego1')">Guardianes de la Danza</button>
+    <button onclick="mostrarJuego('juego2')">Crónica de los Danzantes del Sol</button>
+    <button onclick="mostrarJuego('juego3')">Calendario Sagrado</button>
+  </div>
+
+  <div id="contenedor-juego"></div>
+  <div id="retroalimentacion" class="retro"></div>
+
+  <script src="juegos.js"></script>
+</body>
+</html>
